@@ -1,0 +1,23 @@
+{
+  "name": "nodejs_tutorial",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "debug": "node inspect server.js"
+  },
+  "repository": "https://github.com/TQTung/NodejsTutorial.git",
+  "author": "T",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "chalk": "^5.2.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^7.3.1",
+    "nodemon": "^2.0.22",
+    "validator": "^13.9.0"
+  }
+}
