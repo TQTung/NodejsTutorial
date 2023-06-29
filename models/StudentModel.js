@@ -20,7 +20,7 @@ const StudentModel = mongoose.model(
         message: "Email is incorrect format",
       },
     },
-    language: {
+    languages: {
       type: [String],
     },
     gender: {
@@ -34,8 +34,9 @@ const StudentModel = mongoose.model(
       type: String,
       required: true,
       validate: {
-        validator: (phoneNumber) => phoneNumber.length > 5,
-        message: "Phone Number must be at least 3 characters",
+        validator: (phoneNumber) =>
+          phoneNumber.length > 5 && phoneNumber.length <= 50,
+        message: "Phone Number must be at least 3 characters and maximum 50",
       },
     },
     address: {

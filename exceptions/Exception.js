@@ -10,6 +10,8 @@ export default class Exception extends Error {
   static WRONG_CONECTION_STRING = "Wrong server name/connection string";
   static CANNOT_CONNECT_MONGODB = "Cannot connect to MongoDB";
 
-  static USER_EXIST = "User already exists";
+  static EMAIL_EXIST = "Email'user already exists";
   static CANNOT_REGISTER_USER = "Cannot register user";
+
+  static WRONG_EMAIL_OR_PASSWORD = "Wrong email or password";
 }
